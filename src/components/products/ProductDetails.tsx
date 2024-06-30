@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { RootState } from "../store";
+import { RootState } from "../../store/store";
 
 const ProductDetails = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const ProductDetails = () => {
 
   return (
     <div className="container mt-5">
-      <div className="card">
+      <div className="card p-5">
         <div className="row no-gutters">
           <div className="col-md-4">
             <img src={product.image} className="card-img" alt={product.title} />
