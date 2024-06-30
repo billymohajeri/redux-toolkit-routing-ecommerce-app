@@ -1,23 +1,23 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <ul className="nav justify-content-end bg-dark">
         <li className="nav-item">
-          <a className="nav-link text-light" aria-current="page" href="/">
+          <Link className="nav-link text-light" aria-current="page" to="/">
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light" href="/contact">
+          <Link className="nav-link text-light" to="/contact">
             Contact
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light" href="#">
-            Link
-          </a>
+          <Link className="nav-link text-light" to="/signin">
+            Sign in
+          </Link>
         </li>
       </ul>
       <Outlet />

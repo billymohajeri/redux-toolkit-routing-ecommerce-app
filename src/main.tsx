@@ -4,6 +4,8 @@ import "./index.css";
 import ProductList from "./components/ProductList.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Contact from "./components/Contact.tsx";
+import SignIn from "./components/SignIn.tsx";
+import ProductDetails from "./components/ProductDetails.tsx";
 
 import "bootstrap/dist/css/bootstrap.css";
 import { Provider } from "react-redux";
@@ -15,8 +17,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Navbar />,
     children: [
-      { path: "/", element: <ProductList /> },
+      { path: "/products", element: <ProductList /> },
+      { path: "/products/:id", element: <ProductDetails /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/signin", element: <SignIn /> },
       // { path: "*", element: <NotFound /> },
     ],
   },
