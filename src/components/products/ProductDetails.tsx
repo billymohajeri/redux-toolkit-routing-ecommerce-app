@@ -46,7 +46,7 @@ const ProductDetails = () => {
       <div className="text-center mt-4">
         <button
           className="btn btn-primary"
-          onClick={() => navigate("/products")}
+          onClick={() => navigate("/")}
         >
           Back to Home
         </button>

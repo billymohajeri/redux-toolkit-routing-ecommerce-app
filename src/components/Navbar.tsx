@@ -15,6 +15,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link text-light" to="/register">
+          Register
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link className="nav-link text-light" to="/signin">
             Sign in
           </Link>
