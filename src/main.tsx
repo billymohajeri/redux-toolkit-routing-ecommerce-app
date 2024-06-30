@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import ProductList from "./components/ProductList.tsx";
-import Header from "./components/Header.tsx";
+import Navbar from "./components/Navbar.tsx";
 import Contact from "./components/Contact.tsx";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,7 +13,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <Navbar />,
     children: [
       { path: "/", element: <ProductList /> },
       { path: "/contact", element: <Contact /> },
