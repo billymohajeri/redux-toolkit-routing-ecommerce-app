@@ -7,7 +7,7 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const product = useSelector((state: RootState) =>
-    state.productR.products.find((p) => p.id === Number(id))
+    state.productReducer.products.find((p) => p.id === Number(id))
   );
 
   if (!product) {

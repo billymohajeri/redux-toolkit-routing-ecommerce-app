@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { RootState } from "../../store/store";
 
 const ProductList = () => {
-  const products = useSelector((state: RootState) => state.productR.products);
+  const products = useSelector((state: RootState) => state.productReducer.products);
 
   return (
     <div>
